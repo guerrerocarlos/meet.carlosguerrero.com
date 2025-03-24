@@ -7,8 +7,12 @@ compatibility_flags = ["nodejs_compat"]
 [site]
   bucket = "./public"
 
+routes = [
+  { pattern = "meet.carlosguerrero.com", custom_domain = true }
+]
+
 [vars]
-CALLS_APP_ID = "YOUR_CALLS_SFU_APP_ID_HERE"
+CALLS_APP_ID = "339e4152dc107967bb1ea1ec7d7f469d"
 
 [[durable_objects.bindings]]
 name = "rooms"

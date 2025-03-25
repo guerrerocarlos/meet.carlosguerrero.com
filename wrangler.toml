@@ -3,13 +3,14 @@ name = "orange-meets"
 compatibility_date = "2024-10-07"
 main = "./build/index.js"
 compatibility_flags = ["nodejs_compat"]
+routes = [
+  { pattern = "meet.carlosguerrero.com", custom_domain = true },
+  { pattern = "meet.omattic.com", custom_domain = true },
+  { pattern = "meet.inglesconliza.com", custom_domain = true }
+]
 
 [site]
   bucket = "./public"
-
-routes = [
-  { pattern = "meet.carlosguerrero.com", custom_domain = true }
-]
 
 [vars]
 CALLS_APP_ID = "339e4152dc107967bb1ea1ec7d7f469d"
